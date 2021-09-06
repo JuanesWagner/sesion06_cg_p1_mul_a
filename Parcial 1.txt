@@ -1,0 +1,58 @@
+<html>
+<canvas id="canvas" style="width:1000; height:800">
+<script>
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+	//Piramide separadas
+  	ctx.beginPath();
+    ctx.moveTo(5, 25);
+    ctx.lineTo(35, 30);
+    ctx.lineTo(35, 5);
+    ctx.fillStyle = '#CD5C5C'; 
+    ctx.fill(); 
+    
+    ctx.beginPath();
+    ctx.moveTo(70, 25);
+    ctx.lineTo(36, 30);
+    ctx.lineTo(36, 5);
+    ctx.fillStyle = '#FF0000'; 
+    ctx.fill();
+   
+   //Piramide armada
+   	ctx.beginPath();
+    ctx.moveTo(80, 25);
+    ctx.lineTo(120, 30);
+    ctx.lineTo(120, 5);
+    ctx.fillStyle = '#CD5C5C'; 
+    ctx.fill(); 
+    
+    ctx.beginPath();
+    ctx.moveTo(160, 25);
+    ctx.lineTo(120, 30);
+    ctx.lineTo(120, 5);
+    ctx.fillStyle = '#FF0000'; 
+    ctx.fill();
+    
+    //Piramide rotada
+   	ctx.beginPath();
+    ctx.translate(5, 10);
+    ctx.moveTo(170, 25);
+    ctx.translate(5, 10);
+    ctx.lineTo(210, 30);
+    ctx.translate(5, 10);
+    ctx.lineTo(210, 5);
+    ctx.fillStyle = '#CD5C5C'; 
+    ctx.fill(); 
+    
+   
+    ctx.beginPath();
+    ctx.moveTo(250, 25);
+    ctx.lineTo(210, 30);
+    ctx.lineTo(210, 5);
+    ctx.fillStyle = '#FF0000'; 
+    ctx.fill();
+    
+}
+draw();
+</script>
+</html>
